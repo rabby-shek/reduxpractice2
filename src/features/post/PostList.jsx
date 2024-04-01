@@ -12,10 +12,13 @@ import { useSelector } from "react-redux";
 import { selectAllPost } from "./postSlice";
 import PostAuthor from "./PostAuthor";
 import PostTimeAgo from "./PostTimeAgo";
+import ReactionButton from "./ReactionButton";
 const PostList = () => {
   const posts = useSelector(selectAllPost);
 
-  const orderedPost = posts.slice().sort((a,b) => b.date.localeCompare(a.date)); // sort by date in descending order
+  const orderedPost = posts
+    .slice()
+    .sort((a, b) => b.date.localeCompare(a.date)); // sort by date in descending order
 
   return (
     <section className="post-list-section">
@@ -33,6 +36,7 @@ const PostList = () => {
               <p>
                 <PostTimeAgo timestamp={post.date} />
               </p>
+              <ReactionButton post={post} />
             </article>
           );
         })}
