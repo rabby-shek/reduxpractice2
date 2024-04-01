@@ -1,13 +1,59 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* app section design start here */
+.app {
+  text-align: center;
 }
+/* app section design end here */
+
+/* add post section design start here */
+.add-post-section {
+  padding: 20px;
+}
+
+.add-post-section input {
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  margin: 10px;
+}
+.add-post-section textarea {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.add-post-section button {
+  width: 300px;
+  cursor: pointer;
+  height: 30px;
+}
+.add-post-section select{
+  width: 300px;
+  margin: 10px 0px 0px 0px;
+  height: 30px;
+  padding: 0px 10px;
+}
+/* add post section design end here */
+
+/* post list design section start here */
+.post-list-section{
+  margin: 10px 0px;
+}
+.post-list-section article{
+  background-color:#2bb9f1;
+  margin: 4px 0px;
+  padding: 10px;
+  width: 300px;
+  height: 100%;
+}
+.post-list-section .post-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* post list design section end here */
