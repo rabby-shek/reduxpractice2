@@ -14,6 +14,7 @@ import PostAuthor from "./PostAuthor";
 import PostTimeAgo from "./PostTimeAgo";
 import ReactionButton from "./ReactionButton";
 const PostList = () => {
+  console.log("list rendered");
   const posts = useSelector(selectAllPost);
 
   const orderedPost = posts

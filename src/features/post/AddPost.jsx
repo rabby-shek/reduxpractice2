@@ -63,6 +63,8 @@ const AddPost = () => {
     }
   };
 
+  console.log(" form rendered");
+
   return (
     <section className="add-post-section">
       <h2>Add a new post</h2>
@@ -107,4 +109,4 @@ const AddPost = () => {
   );
 };
 
-export default AddPost;
+export default React.memo(AddPost);
